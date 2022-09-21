@@ -24,3 +24,9 @@ function moveleft() {
 }
 
 moveleft();
+
+$(".hover").mouseleave(
+    function () {
+      $(this).removeClass("hover");
+    }
+  );

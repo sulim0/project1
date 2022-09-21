@@ -1,6 +1,6 @@
 * {
     margin:auto;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
 }
 .container{
@@ -29,18 +29,19 @@
     position: absolute;
     text-align: center;
     font-size: 150%;
-    top: 1%;
-    left: 2%;
+    top: 5%;
+    left: 5%;
 }
+
 .item1{
     text-decoration: none;
     color: rgba(43, 52, 94, 0.89);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     position: absolute;
     font-weight: bold;
-    top: 80px;
-    left: 5%;
-    font-size: 30px;
+    top: 90px;
+    left: 7%;
+    font-size: 20px;
 }
 .item2{
     text-decoration: none;
@@ -48,8 +49,8 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     position: absolute;
     font-weight: bold;
-    top: 135px;
-    left: 5%;
+    top: 145px;
+    left: 7%;
     font-size: 18px;
 }
 .item3{
@@ -58,9 +59,29 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     position: absolute;
     font-weight: bold;
-    top: 170px;
-    left: 5%;
+    top: 190px;
+    left: 7%;
     font-size: 18px;
+}
+.item4{
+    text-decoration: none;
+    color: rgb(33, 50, 94);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    text-align: center;
+    font-size: 90%;
+    top: 20%;
+    right: 5%;
+}
+.item-frame1{
+    text-decoration: none;
+    color: rgba(43, 52, 94, 0.89);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    font-weight: bold;
+    top: 280px;
+    left: 7%;
+    font-size: 20px;
 }
 
 ul{
@@ -91,6 +112,7 @@ ul{
     transform-style: preserve-3d;
     animation: roter 29s linear infinite;
     }
+    
 
 
 
