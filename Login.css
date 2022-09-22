@@ -13,7 +13,7 @@
 }
 .header{
     max-width: 100%;
-    height: 80px;
+    height: 50px;
     margin:0 auto;
     display: flex;
     justify-content: space-between;
@@ -23,7 +23,7 @@
     background-repeat: no-repeat;
     background-position: center;
     object-fit: none;
-    padding: 150px 0 100px;
+    padding: 50px 0 100px;
     text-align: center;
     
 }
@@ -119,3 +119,98 @@ body{
     font-size: 12px;
     color: white;
 }
+
+
+.dropmenu{
+    border:none;
+    border:0px;
+    margin:0px;
+    padding:0px;
+    }
+    .dropmenu .logo{
+        height:90px;
+        list-style:none;
+        margin:0;
+        padding:0;
+        margin-left: 20px;
+        font-size: 50px;
+    }
+
+    .dropmenu ul{
+    height:120px;
+    list-style:none;
+    margin:0;
+    padding:0;
+    font-size: 30px;
+    }
+    
+    .dropmenu li{
+    float:left;
+    padding:0px;
+    }
+    
+    .dropmenu li a{
+    color: rgb(33, 50, 94);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display:block;
+    line-height:90px;
+    margin-left: 30px;
+    padding:0px 20px;
+    text-align:center;
+    text-decoration:none;
+    }
+    
+    .dropmenu li a:hover, .dropmenu ul li:hover a{
+    background: rgb(33, 50, 94);
+    color:#FFFFFF;
+    text-decoration:none;
+    }
+    
+    .dropmenu li ul{
+    display:none; 
+    height:auto;
+    border:0px;
+    position:absolute;
+    margin-left: 30px;
+    width:200px;
+    z-index:200;
+    /*top:1em;
+    /*left:0;*/
+    }
+    
+    .dropmenu li:hover ul{
+    display:block;
+    }
+    
+    .dropmenu li li {
+    background: rgba(154, 179, 202, 0.871);
+    display:block;
+    float:none;
+    margin:0px;
+    padding:0px;
+    width:300px;
+    }
+    
+    .dropmenu li:hover li a{
+    background:none;
+    }
+    
+    .dropmenu li ul a{
+    display:block;
+    height:80px;
+    font-size:25px;
+    margin:0px;
+    padding:0px 10px 0px 15px;
+    text-align:left;
+    }
+    
+    .dropmenu li ul a:hover, .dropmenu li ul li:hover a{
+    background: rgb(73, 95, 124);
+    border:0px;
+    color:#ffffff;
+    text-decoration:none;
+    }
+    
+    .dropmenu p{
+    clear:left;
+    }

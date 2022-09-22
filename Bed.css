@@ -3,115 +3,132 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container{
-    width:100%;
-    margin: 10px auto;
-    position: relative;
-    text-align: center;
+
+.menu input[type=checkbox]{
+    display: none;
 }
-.header{
-    max-width: 100%;
-    height: 80px;
-    margin:0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    vertical-align: middle;
-    background-image: url('#');
+.menu input[type=checkbox]+label{
+    padding-left: 25px;
+    background-image: url('./img/menu-open.svg');
     background-repeat: no-repeat;
-    background-position: center;
-    object-fit: none;
 }
-.item{
+.menu input[type=checkbox]+label>span{
+    font-weight: bold;
+}
+.menu input[type=checkbox]:checked+label{
+    background-image: url('./img/menu-close.svg');
+}
+/* 메뉴 목록*/
+.menu .menuitems{
+    display: none;
+}
+.menu .menuitems{
+    list-style: none;
+}
+.menu .menuitems li{
+    padding: 5px;
+}
+.menu .menuitems li a{
     text-decoration: none;
-    color: rgb(33, 50, 94);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    position: absolute;
-    text-align: center;
-    font-size: 150%;
-    top: 14%;
-    left: 5%;
+}
+/* 메뉴 펼침 - 체크박스 체크되면 메뉴목록 표시 */
+.menu input[type=checkbox]:checked~.menuitems{
+    display: block;
 }
 
-.item1{
-    text-decoration: none;
-    color: rgba(43, 52, 94, 0.89);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    position: absolute;
-    font-weight: bold;
-    top: 120px;
-    left: 7%;
-    font-size: 20px;
-}
-.item2{
-    text-decoration: none;
-    color: rgb(241, 208, 10);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    position: absolute;
-    font-weight: bold;
-    top: 175px;
-    left: 7%;
-    font-size: 18px;
-}
-.item3{
-    text-decoration: none;
-    color: rgb(241, 208, 10);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    position: absolute;
-    font-weight: bold;
-    top: 220px;
-    left: 7%;
-    font-size: 18px;
-}
-.item4{
-    text-decoration: none;
+.dropmenu{
+    border:none;
+    border:0px;
+    margin:0px;
+    padding:0px;
+    }
+    .dropmenu .logo{
+        height:90px;
+        list-style:none;
+        margin:0;
+        padding:0;
+        margin-left: 20px;
+        font-size: 50px;
+    }
+
+    .dropmenu ul{
+    height:120px;
+    list-style:none;
+    margin:0;
+    padding:0;
+    font-size: 25px;
+    }
+    
+    .dropmenu li{
+    float:left;
+    padding:0px;
+    }
+    
+    .dropmenu li a{
     color: rgb(33, 50, 94);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    position: absolute;
-    text-align: center;
-    font-size: 90%;
-    top: 10%;
-    right: 5%;
-}
-.item-frame{
-    text-decoration: none;
-    color: rgba(43, 52, 94, 0.89);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    position: absolute;
-    font-weight: bold;
-    top: 290px;
-    left: 7%;
-    font-size: 20px;
-}
-.item-frame1{
-    text-decoration: none;
-    color: rgb(241, 208, 10);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    position: absolute;
-    font-weight: bold;
-    top: 345px;
-    left: 7%;
-    font-size: 18px;
-}
-.item-frame2{
-    text-decoration: none;
-    color: rgb(241, 208, 10);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    position: absolute;
-    font-weight: bold;
-    top: 390px;
-    left: 7%;
-    font-size: 18px;
-}
-ul{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%, -20%);
-    text-align: center;
-    color: black;
-}
+    display:block;
+    line-height:90px;
+    margin-left: 30px;
+    padding:0px 20px;
+    text-align:center;
+    text-decoration:none;
+    }
+    
+    .dropmenu li a:hover, .dropmenu ul li:hover a{
+    background: rgb(33, 50, 94);
+    color:#FFFFFF;
+    text-decoration:none;
+    }
+    
+    .dropmenu li ul{
+    display:none; 
+    height:auto;
+    border:0px;
+    position:absolute;
+    margin-left: 30px;
+    width:200px;
+    z-index:200;
+    /*top:1em;
+    /*left:0;*/
+    }
+    
+    .dropmenu li:hover ul{
+    display:block;
+    }
+    
+    .dropmenu li li {
+    background: rgba(154, 179, 202, 0.871);
+    display:block;
+    float:none;
+    margin:0px;
+    padding:0px;
+    width:300px;
+    }
+    
+    .dropmenu li:hover li a{
+    background:none;
+    }
+    
+    .dropmenu li ul a{
+    display:block;
+    height:80px;
+    font-size:20px;
+    margin:0px;
+    padding:0px 10px 0px 15px;
+    text-align:left;
+    }
+    
+    .dropmenu li ul a:hover, .dropmenu li ul li:hover a{
+    background: rgb(73, 95, 124);
+    border:0px;
+    color:#ffffff;
+    text-decoration:none;
+    }
+    
+    .dropmenu p{
+    clear:left;
+    }
 
 
 .slider {
@@ -136,28 +153,52 @@ ul{
     padding-top: 30px;
     border-top: 1px solid #ebebeb;
 }
-
-
-
-
-/* span {
+footer .footer_link a {
+    display: inline-block;
+    margin-right: 45px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     color: #333;
-    line-height: 36px;
+    line-height: 50px;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+#footer{
+    position: fixed;
+    background-color: rgba(199, 197, 197, 0.711); /*임의색상*/
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 6rem;
 }
-body {
+
+#contetns{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 6rem;
+}
+/* footer {
+    position: relative;
+    height: 220px;
+    padding: 60px 370px 62px 80px;
+    background: #fff;
+    z-index: 16;
+    display: block;
+    height: auto;
+    padding-left: 5%;
     font-family: "Metropolis", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;
-}
-a {
-    text-decoration: none;
+} */
+body {
+    position: relative;
+    
+    font-size: 18px;
+    font-weight: 300;
     color: #666;
-} */
-/* a:-webkit-any-link {
-    cursor: pointer;
-} */
+    letter-spacing: -0.025em;
+    line-height: 1;
+    height: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-overflow-scrolling: touch;
+}

@@ -8,48 +8,62 @@
     <link rel="stylesheet" href="Frame.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header"> 
-            <h1><a class ="item" href="#" onclick="location.href='Bed.html'">BCE BED</a></h1>
+    <div style="display: flex; ">
+        <div class="dropmenu">
+            <ul>
+                <li><a class="logo"href="#" onclick="location.href='Bed.html'">BCE BED</a></li>
+                <li><a href="#" id="current">BED</a>
+                    <ul>
+                        <li><a href="#" onclick="location.href='Frame.html'">Frame</a></li>
+                        <li><a href="#" onclick="location.href='mattress.html'">mattress</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" id="current">frame</a>
+                    <ul>
+                        <li><a href="#">Furniture</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="login" href="#" onclick="location.href='Login.html'">로그인</div>
+            <div class="item_area"></div>
         </div>
-        <div class="item_area"></div>
-        <div style="display: flex; ">
-            <div class="nav">
-                <ul>
-                    <li><a class ="item1" href="#" onclick="location.href='Frame.html'">침대</a></li>
-                    <li><a class ="item2" href="#" onclick="location.href='Frame.html'">프레임</a></li>
-                    <li><a class ="item3" href="#" onclick="location.href='Mattress.html'">매트리스</a></li>
-                    <li><a class ="item-frame" href="#" onclick="location.href='Frame.html'">가구</a></li>
-                    <li><a class ="item-frame1" href="#">룸세트</a></li>
-                    <li><a class ="item-frame2" href="#">리빙가구</a></li>
-                </ul>
-            </div>
-            <div class="sam">
-            <figure class="snip1141"  href="#"><img src="./Img/침대.jpg" alt="./Img/침대.jpg" />
-                <figcaption>
-                    <div class="circle"><i class="ion-ios-plus-empty"> </i></div>
-                    <h2>ARNO-Ⅱ</h2>
-                </figcaption>
-                <a href="#"></a>
-            </figure>
-            <figure class="snip1141"  href="#"><img src="./Img/침대.jpg" alt="./Img/침대.jpg" />
-                <figcaption>
-                    <div class="circle"><i class="ion-ios-plus-empty"> </i></div>
-                    <h2>ARNO-Ⅱ</h2>
-                    <h2>ARNO-Ⅱ</h2>
-                </figcaption>
-                <a href="#"></a>
-            </figure>
-            <figure class="snip1141"  href="#"><img src="./Img/침대.jpg" alt="./Img/침대.jpg" />
-                <figcaption>
-                    <div class="circle"><i class="ion-ios-plus-empty"> </i></div>
-                    <h2>ARNO-Ⅱ</h2>
-                    <h2>ARNO-Ⅱ</h2>
-                </figcaption>
-                <a href="#"></a>
-            </figure>
+    
+        <div class="menu">
+            <input type="checkbox" class="" id="collapsible">
+            <label for="collapsible"><span>메뉴</span></label>
+            <ul id="menuitems" class="menuitems">
+                <li><a href="#" onclick="location.href='Bed.html'">홈</a></li>
+                <li><a href="#" onclick="location.href='Frame.html'">제품</a></li>
+                <li><a href="#">다운로드</a></li>
+                <li><a href="#">게시판</a></li>
+                <li><a href="#">오시는길</a></li>
+                <li><a href="#">문의</a></li>
+            </ul>        
         </div>
-    </div>
+        <div class="sam">
+        <figure class="snip1141"  href="#"><img src="./Img/침대.jpg" alt="./Img/침대.jpg" />
+            <figcaption>
+                <div class="circle"><i class="ion-ios-plus-empty"> </i></div>
+                <h2>ARNO-Ⅱ</h2>
+            </figcaption>
+            <a href="#"></a>
+        </figure>
+        <figure class="snip1141"  href="#"><img src="./Img/침대.jpg" alt="./Img/침대.jpg" />
+            <figcaption>
+                <div class="circle"><i class="ion-ios-plus-empty"> </i></div>
+                <h2>ARNO-Ⅱ</h2>
+                <h2>ARNO-Ⅱ</h2>
+            </figcaption>
+            <a href="#"></a>
+        </figure>
+        <figure class="snip1141"  href="#"><img src="./Img/침대.jpg" alt="./Img/침대.jpg" />
+            <figcaption>
+                <div class="circle"><i class="ion-ios-plus-empty"> </i></div>
+                <h2>ARNO-Ⅱ</h2>
+                <h2>ARNO-Ⅱ</h2>
+            </figcaption>
+            <a href="#"></a>
+        </figure>
     </div>
 </body>
 </html>
