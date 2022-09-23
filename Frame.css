@@ -1,97 +1,163 @@
 * {
-  margin:auto;
-  padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  min-width: 992px;
+  font-family: "Helvetica";
+}
+
+.navbar{
+  height: 80px;
+  padding-left: 30px;
+}
+
+.logo{
+  line-height: 80px;
+  float: left;
+}
+
+.logo img{
+  vertical-align: middle;
+}
+
+.navbar ul{
+  float: right;
+}
+
+.navbar li{
+  list-style-type: none;
+  float: left;
+  margin-right: 30px;
+}
+
+.navbar a{
+  text-decoration: none;
+  color: black;
+  font-style: bold;
+  font-size: 13px;
+}
+
+.hero_header{
+  height: 650px;
+  width: 60%;
+  position: relative;
+  margin: 0 auto;
+  perspective: 1000px;
+  padding-top: 20px;
+}
+
+body h1{
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  font-size: 40px;
+  font-style: bold;
+  color: #203950;
+}
+
+.products {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  width: 980px;
+  text-align: center;
+}
+
+.products img{
+  width: 225px;
+  height: 225px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.products a{
+  text-decoration: none;
+  color: black;
+  float: left;
+  font-size: 16px;
+}
+
+.price{
+  margin-top: 4px;
+  margin-bottom: 80px;
+}
+
+.clearfix{
+  clear: both;
+}
+
+.footer{
+  text-align: center;
+  background-color: slategray;
+}
+
+.rotator {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 55%;
+  height: 150px;
+  transform-style: preserve-3d;
+  animation: roter 29s linear infinite;
+  }
+
 
 .menu input[type=checkbox]{
   display: none;
 }
 .menu input[type=checkbox]+label{
-  padding-left: 25px;
-  background-image: url('./img/menu-open.svg');
-  background-repeat: no-repeat;
+    padding-left: 25px;
+    background-image: url('./img/menu-open.svg');
+    background-repeat: no-repeat;
+    
 }
 .menu input[type=checkbox]+label>span{
-  font-weight: bold;
+    font-weight: bold;
 }
 .menu input[type=checkbox]:checked+label{
-  background-image: url('./img/menu-close.svg');
+    background-image: url('./img/menu-close.svg');
 }
 /* 메뉴 목록*/
 .menu .menuitems{
-  display: none;
-}
-.menu .menuitems{
-  list-style: none;
+    display: none;
+    list-style: none;
+    position: absolute;
 }
 .menu .menuitems li{
-  padding: 5px;
+    padding: 5px;
+    
 }
 .menu .menuitems li a{
-  text-decoration: none;
+    text-decoration: none;
 }
 /* 메뉴 펼침 - 체크박스 체크되면 메뉴목록 표시 */
 .menu input[type=checkbox]:checked~.menuitems{
-  display: block;
+    display: block;
 }
 
+
+.item_area {
+  position: relative;
+  /* padding-top: 10px; */
+  border-top: 1px solid #ebebeb;
+}
 .dropmenu{
   border:none;
   border:0px;
   margin:0px;
   padding:0px;
   }
-  .dropmenu .logo{
-      height:90px;
-      list-style:none;
-      margin:0;
-      padding:0;
-      margin-left: 20px;
-      font-size: 50px;
-  }
-
-  .dropmenu ul{
-  height:120px;
-  list-style:none;
-  margin:0;
-  padding:0;
-  font-size: 25px;
-  }
-  
-  .dropmenu li{
-  float:left;
-  padding:0px;
-  }
-  
-  .dropmenu li a{
-  color: rgb(33, 50, 94);
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  display:block;
-  line-height:90px;
-  margin-left: 30px;
-  padding:0px 20px;
-  text-align:center;
-  text-decoration:none;
-  }
-  
-  .dropmenu li a:hover, .dropmenu ul li:hover a{
-  background: rgb(33, 50, 94);
-  color:#FFFFFF;
-  text-decoration:none;
-  }
-  
-  .dropmenu li ul{
-  display:none; 
-  height:auto;
-  border:0px;
-  position:absolute;
-  margin-left: 30px;
-  width:200px;
-  z-index:200;
-  /*top:1em;
-  /*left:0;*/
-  }
+.dropmenu .logo{
+    height:90px;
+    list-style:none;
+    margin:0;
+    padding:0;
+    margin-left: 20px;
+    font-size: 50px;
+}
   
   .dropmenu li:hover ul{
   display:block;
@@ -131,51 +197,40 @@
   }
 
 
-.slider {
-  position: relative;
-  width: 100%;
-  margin: 50px auto;
-  perspective: 1000px;
-  padding-top: 120px;
-  }
-.rotator {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 55%;
-  height: 150px;
-  transform-style: preserve-3d;
-  animation: roter 29s linear infinite;
-  }
-.item_area {
-  position: relative;
-  padding-top: 30px;
-  border-top: 1px solid #ebebeb;
+
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
 }
 
-footer {
-  position: relative;
-  height: 220px;
-  padding: 60px 370px 62px 80px;
-  background: #fff;
-  z-index: 16;
-  display: block;
-  height: auto;
-  padding-left: 5%;
-  font-family: "Metropolis", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;
-}
-body {
-  position: relative;
-  
-  font-size: 18px;
-  font-weight: 300;
-  color: #666;
-  letter-spacing: -0.025em;
-  line-height: 1;
-  height: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -webkit-overflow-scrolling: touch;
-}

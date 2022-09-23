@@ -9,12 +9,12 @@
   }
   
   .navbar{
-    height: 60px;
+    height: 80px;
     padding-left: 30px;
   }
   
   .logo{
-    line-height: 60px;
+    line-height: 80px;
     float: left;
   }
   
@@ -90,15 +90,9 @@
   
   .footer{
     text-align: center;
+    background-color: slategray;
   }
   
-  .footer img{
-    margin-top: 40px;
-    height: 20px;
-    margin-bottom: 80px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
 .rotator {
     position: absolute;
     left: 0;
@@ -140,4 +134,60 @@
   .menu input[type=checkbox]:checked~.menuitems{
       display: block;
   }
+  .item_area {
+    position: relative;
+    /* padding-top: 10px; */
+    border-top: 1px solid #ebebeb;
+  }
+  .dropmenu{
+    border:none;
+    border:0px;
+    margin:0px;
+    padding:0px;
+    }
+  .dropmenu .logo{
+      height:90px;
+      list-style:none;
+      margin:0;
+      padding:0;
+      margin-left: 20px;
+      font-size: 50px;
+  }
+    
+    .dropmenu li:hover ul{
+    display:block;
+    }
+    
+    .dropmenu li li {
+    background: rgba(154, 179, 202, 0.871);
+    display:block;
+    float:none;
+    margin:0px;
+    padding:0px;
+    width:300px;
+    }
+    
+    .dropmenu li:hover li a{
+    background:none;
+    }
+    
+    .dropmenu li ul a{
+    display:block;
+    height:80px;
+    font-size:20px;
+    margin:0px;
+    padding:0px 10px 0px 15px;
+    text-align:left;
+    }
+    
+    .dropmenu li ul a:hover, .dropmenu li ul li:hover a{
+    background: rgb(73, 95, 124);
+    border:0px;
+    color:#ffffff;
+    text-decoration:none;
+    }
+    
+    .dropmenu p{
+    clear:left;
+    }
   

@@ -1,69 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Frame.css">
-</head>
-<body>
-    <div style="display: flex; ">
-        <div class="dropmenu">
-            <ul>
-                <li><a class="logo"href="#" onclick="location.href='Bed.html'">BCE BED</a></li>
-                <li><a href="#" id="current">BED</a>
-                    <ul>
-                        <li><a href="#" onclick="location.href='Frame.html'">Frame</a></li>
-                        <li><a href="#" onclick="location.href='mattress.html'">mattress</a></li>
-                    </ul>
-                </li>
-                <li><a href="#" id="current">frame</a>
-                    <ul>
-                        <li><a href="#">Furniture</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <div class="login" href="#" onclick="location.href='Login.html'">로그인</div>
-            <div class="item_area"></div>
-        </div>
+<html>
+  <head>
+    <title>SimpleShop</title>
+    <meta charset="utf-8" />
+    <link href="./Frame.css" rel="stylesheet" />
+  <style>
+    div, ul, li { margin:0; padding:0; }
     
-        <div class="menu">
-            <input type="checkbox" class="" id="collapsible">
-            <label for="collapsible"><span>메뉴</span></label>
-            <ul id="menuitems" class="menuitems">
-                <li><a href="#" onclick="location.href='Bed.html'">홈</a></li>
-                <li><a href="#" onclick="location.href='Frame.html'">제품</a></li>
-                <li><a href="#">다운로드</a></li>
-                <li><a href="#">게시판</a></li>
-                <li><a href="#">오시는길</a></li>
-                <li><a href="#">문의</a></li>
-            </ul>        
-        </div>
-        <div class="sam">
-        <figure class="snip1141"  href="#"><img src="./Img/침대.jpg" alt="./Img/침대.jpg" />
-            <figcaption>
-                <div class="circle"><i class="ion-ios-plus-empty"> </i></div>
-                <h2>ARNO-Ⅱ</h2>
-            </figcaption>
-            <a href="#"></a>
-        </figure>
-        <figure class="snip1141"  href="#"><img src="./Img/침대.jpg" alt="./Img/침대.jpg" />
-            <figcaption>
-                <div class="circle"><i class="ion-ios-plus-empty"> </i></div>
-                <h2>ARNO-Ⅱ</h2>
-                <h2>ARNO-Ⅱ</h2>
-            </figcaption>
-            <a href="#"></a>
-        </figure>
-        <figure class="snip1141"  href="#"><img src="./Img/침대.jpg" alt="./Img/침대.jpg" />
-            <figcaption>
-                <div class="circle"><i class="ion-ios-plus-empty"> </i></div>
-                <h2>ARNO-Ⅱ</h2>
-                <h2>ARNO-Ⅱ</h2>
-            </figcaption>
-            <a href="#"></a>
-        </figure>
+    #blogMenu {
+      float:right;
+      margin:15px 5px 3px 5px;
+      padding:0 0 3px 0;
+      -moz-border-radius: 3px;
+      -khtml-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      background-color: white;
+    }
+    
+    #blogMenu ul li {
+      float:left;
+      list-style-type:none;
+    }
+    
+    #blogMenu a {
+      height:16px;
+      color: black;
+      font-family:arial;
+      font-size:15px;
+      padding:0 10px 0 10px;
+      text-decoration:none;
+    }
+    
+    #blogMenu a:hover {
+      color:rgb(33, 50, 94);
+      border-bottom:3px solid black;
+      font-size:23px;
+    }
+    
+    #blogMenu ul ul {
+      display:none;
+      position:absolute;
+      background-color:white;
+    }
+    
+    #blogMenu ul li:hover ul {
+      display: block;
+    }
+    
+    #blogMenu ul ul li {
+      float:none;
+    }
+    
+    </style>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <a class="logo" href="#" onclick="location.href='Bed.html'">
+        <img src="./Img/Logo1.PNG" height="50px">
+      </a>
+      <div class="dropmenu"></div>
+        <ul>
+          <div id="blogMenu">
+            <ul>
+            <li><a href="#">Bed</a>
+            
+            <ul>
+              <li><a href="#" onclick="location.href='frame.html'">frame</a></li>
+              <li><a href="#" onclick="location.href='Mattress.html'">Mattress</a></li>
+            </ul>
+            
+            </li>
+            <li><a href="#">Furniture</a></li>
+            <li><a href="#"onclick="location.href='Login.html'">Login</a></li>
+            </ul>
+            </div>
+            </SPAN>
+        </ul>
     </div>
-</body>
+    <div class="item_area"></div>
+        <div class="menu">
+        <input type="checkbox" class="" id="collapsible">
+        <label for="collapsible"><span>사이즈</span></label>
+        <ul id="menuitems" class="menuitems">
+            <li><a href="#" onclick="location.href='Bed.html'">라지킹(LK)</a></li>
+            <li><a href="#" onclick="location.href='Frame.html'">킹(K)</a></li>
+            <li><a href="#">라지퀸(LQ)</a></li>
+            <li><a href="#">더블(DD)</a></li>
+            <li><a href="#">슈퍼싱글(SS)</a></li>
+            <li><a href="#">디럭스싱글(DS)</a></li>
+        </ul>        
+        </div>
+            <div class="IMG" style="width: 100%; height: 200px;text-align: center;">
+            <video src="./Mp4/ì¹¨ë__ - 85004.mp4" autoplay muted loop
+              width="100%" height="200px" style="display: inline-block;"></video>
+            <h2 style="text-align: center; line-height: 170px; display: inline-block; position: relative;
+              top: -200px">침대</h2></div>
+            <br><br>
+            <br>
+            
+        <div class="products">
+            <a href="#">
+                <img src="./Img/라지2.jpg">
+                <p>Sunglasses</p>
+                <p class="price">49,000</p>
+            </a>
+            <a href="#">
+                <img src="./Img/라지1.jpg">
+                <p>Tassel Loafer</p>
+                <p class="price">89,000</p>
+            </a>
+            <a href="#">
+                <img src="./Img/침대3.jpg">
+                <p>Begie Bag</p>
+                <p class="price">69,000</p>
+            </a>
+            <a href="#">
+                <img src="./Img/침대4.jpg">
+                <p>Sneakers</p>
+                <p class="price">79,000</p>
+            </a>
+            <a href="#">
+                <img src="./Img/침대5.jpg">
+                <p>Slippers</p>
+                <p class="price">29,000</p>
+            </a>
+            <a href="#">
+                <img src="./Img/침대6.jpg">
+                <p>Wrist Watch</p>
+                <p class="price">99,000</p>
+            </a>
+            <a href="#">
+                <img src="./Img/슈퍼싱글.jpg">
+                <p>Fedora Hat</p>
+                <p class="price">39,000</p>
+            </a>
+            <a href="#">
+                <img src="./Img/슈퍼싱글.jpg">
+                <p>Classic Loafer</p>
+                <p class="price">99,000</p>
+            </a>
+            <a href="#">
+                <img src="./Img/슈퍼싱글.jpg">
+                <p>Pink Bag</p>
+                <p class="price">79,000</p>
+            </a>
+            <div class="clearfix"></div>
+            </div>
+            <div class="item_area"></div>
+            
+            <div class="footer">
+            <a href="/business/overview/index.do">기업정보</a>
+            <a href="/etc/policy/use/view.do">이용약관</a>
+            <a href="/etc/policy/privacy/view.do" class="priv">개인정보처리방침</a>
+            <a href="/customer/prdct-manual/index.do">고객지원</a>
+            <br>
+            <br>
+            <div class="item_area"></div>
+            <p class="registration">(주)아이스침대 / 사업자등록번호 : 01-064-823019</p>
+            <p class="address">
+                "본사 : 충청남도 천안시 대흥로 215 8층 / FAX : 02-003-0190"
+            </p>
+            <br>
+        </div>
+    </body>
 </html>

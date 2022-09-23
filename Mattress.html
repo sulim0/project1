@@ -24,46 +24,97 @@
       setTimeout(slideShow, 4000);   //함수를 4초마다 호출
   }
   </script>
+  <style>
+    div, ul, li { margin:0; padding:0; }
+    
+    #blogMenu {
+      float:right;
+      margin:15px 5px 3px 5px;
+      padding:0 0 3px 0;
+      -moz-border-radius: 3px;
+      -khtml-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      background-color: white;
+    }
+    
+    #blogMenu ul li {
+      float:left;
+      list-style-type:none;
+    }
+    
+    #blogMenu a {
+      height:16px;
+      color: black;
+      font-family:arial;
+      font-size:16px;
+      padding:0 10px 0 10px;
+      text-decoration:none;
+    }
+    
+    #blogMenu a:hover {
+      color:rgb(33, 50, 94);
+      border-bottom:3px solid black;
+      font-size:25px;
+    }
+    
+    #blogMenu ul ul {
+      display:none;
+      position:absolute;
+      background-color:white;
+    }
+    
+    #blogMenu ul li:hover ul {
+      display: block;
+    }
+    
+    #blogMenu ul ul li {
+      float:none;
+    }
+    
+    </style>
   </head>
 
   <body>
     <div class="navbar">
       <a class="logo" href="#">
-        <img src="./Img/LOGO.PNG" height="50px">
+        <img src="./Img/Logo1.PNG" height="50px">
       </a>
-      <ul>
-        <li><a href="#">Bed</a></li>
-        <li><a href="#">Cart</a></li>
-        <li><a href="#">Login</a></li>
-        <div class="menu">
-          <input type="checkbox" class="" id="collapsible">
-          <label for="collapsible"><span>메뉴</span></label>
-          <ul id="menuitems" class="menuitems">
-              <li><a href="#" onclick="location.href='Bed.html'">홈</a></li>
-              <li><a href="#" onclick="location.href='Frame.html'">제품</a></li>
-              <li><a href="#">다운로드</a></li>
-              <li><a href="#">게시판</a></li>
-              <li><a href="#">오시는길</a></li>
-              <li><a href="#">문의</a></li>
-          </ul>        
-      </div>
-      </ul>
+      <div class="dropmenu"></div>
+        <ul>
+          <div id="blogMenu">
+            <ul>
+            <li><a href="#">Bed</a>
+            
+            <ul>
+              <li><a href="#" onclick="location.href='frame.html'">frame</a></li>
+              <li><a href="#" onclick="location.href='Mattress.html'">Mattress</a></li>
+            </ul>
+            
+            </li>
+            <li><a href="#">Furniture</a></li>
+            <li><a href="#"onclick="location.href='Login.html'">Login</a></li>
+            </ul>
+            </div>
+            </SPAN>
+        </ul>
     </div>
+    <div class="item_area"></div>
     
-    <img class="hero_header" src="./Img/침대.jpg"/>
-    <img class="hero_header" src="./Img/침대4.jpg"/>
-    <img class="hero_header" src="./Img/침대5.jpg"/>
-    <img class="hero_header" src="./Img/침대6.jpg"/>
+    <img class="hero_header" src="./Img/침대.jpg" onclick="location.href='Bed.html'"/>
+    <img class="hero_header" src="./Img/침대4.jpg" onclick="location.href='Bed.html'"/>
+    <img class="hero_header" src="./Img/침대5.jpg" onclick="location.href='Bed.html'"/>
+    <img class="hero_header" src="./Img/침대6.jpg" onclick="location.href='Bed.html'"/>
 
     <h1>Our new Products</h1>
     <div class="products">
       <a href="#">
-        <img src="./Img/침대1.jpg">
+        <img src="./Img/라지2.jpg">
         <p>Sunglasses</p>
         <p class="price">49,000</p>
       </a>
       <a href="#">
-        <img src="./Img/침대2.jpg">
+        <img src="./Img/라지1.jpg">
         <p>Tassel Loafer</p>
         <p class="price">89,000</p>
       </a>
@@ -104,11 +155,21 @@
       </a>
       <div class="clearfix"></div>
     </div>
+    <div class="item_area"></div>
     
     <div class="footer">
-      <a href="#"><img src="images/facebook.png"></a>
-      <a href="#"><img src="images/instagram.png"></a>
-      <a href="#"><img src="images/twitter.png"></a>
-    </div>
+      <a href="/business/overview/index.do">기업정보</a>
+      <a href="/etc/policy/use/view.do">이용약관</a>
+      <a href="/etc/policy/privacy/view.do" class="priv">개인정보처리방침</a>
+      <a href="/customer/prdct-manual/index.do">고객지원</a>
+      <br>
+      <br>
+      <div class="item_area"></div>
+      <p class="registration">(주)아이스침대 / 사업자등록번호 : 01-064-823019</p>
+      <p class="address">
+          "본사 : 충청남도 천안시 대흥로 215 8층 / FAX : 02-003-0190"
+      </p>
+      <br>
+  </div>
   </body>
 </html>

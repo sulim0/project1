@@ -1,204 +1,64 @@
 * {
-    margin:auto;
-    padding: 0;
     box-sizing: border-box;
-    
-}
-.container{
-    width:100%;
-    margin: 10px auto;
-    position: relative;
-    text-align: center;
-    
-}
-.header{
-    max-width: 100%;
-    height: 50px;
-    margin:0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  }
+  
+  body {
+    margin: 0;
+    min-width: 992px;
+    font-family: "Helvetica";
+  }
+  
+  .navbar{
+    height: 80px;
+    padding-left: 30px;
+  }
+  
+  .logo{
+    line-height: 80px;
+    float: left;
+  }
+  
+  .logo img{
     vertical-align: middle;
-    background-image: url('#');
-    background-repeat: no-repeat;
-    background-position: center;
-    object-fit: none;
-    padding: 50px 0 100px;
-    text-align: center;
-    
-}
-.item{
+  }
+  .navbar ul{
+    float: right;
+  }
+  
+  .navbar li{
+    list-style-type: none;
+    float: left;
+    margin-right: 30px;
+  }
+  
+  .navbar a{
     text-decoration: none;
-    color: rgb(33, 50, 94);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    position: absolute;
+    color: black;
+    font-style: bold;
+    font-size: 13px;
+  }
+  .footer{
     text-align: center;
-    font-size: 150%;
-    top: 6.5%;
-    left: 5%;
-}
-body{
-    margin: 0 auto;
-    background-color: white;
-    
-}
-.Login{
-    font-size: 50px;
-}
-.member_area {
-    position: relative;
-    padding-top: 60px;
-    border-top: 1px solid #ebebeb;
-}
-.login-form{
-    width: 500px;
-    border: 0;
-    border-radius: 5px;
-    background-color: rgb(51, 75, 127);
-    padding: 30px;
-    margin: 0 auto;
-    position:relative;
-}
-
-
-.login-form::before{
-    position:absolute;
-    border-radius: 5px;
-    width: 100%;
-    height: 100%;
-    content:'';
-    top:-10px;
-    left:-10px;
-    border: 2px solid #000;
-    z-index:-1;
-    transition: all 0.2s;
+    background-color: slategray;
   }
-  .login-form:hover::before{
-    top: 10px;
-    left: 10px
-  }
-  .login-form::after{
-    position:absolute;
-    width: 100%;
-    height: 100%;
-    content:'';
-    top:10px;
-    left:10px;
-    background:#000;
-    border-radius: 5px;
-    z-index:-1;
-    transition: all 0.2s;
-  }
-  .login-form:hover::after{
-    top: -10px;
-    left:-10px
-  }
-.text-field{
-    font-size: 14px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 5px;
-    padding: 20px;
-    width: 100%;
-}
-.submit-btn{
-    color: rgb(51, 75, 127);
-    font-size: 14px;
-    background-color: rgb(255, 255, 255);
-    margin-bottom: 50px;
-    padding: 10px;
-    border: none;
-    text-align: center;
-    border-radius: 5px;
-    width: 100%;
-}
-.links{
-    text-align: center;
-}
-.links a{
-    font-size: 12px;
-    color: white;
-}
 
-
-.dropmenu{
+  .dropmenu{
     border:none;
     border:0px;
     margin:0px;
     padding:0px;
     }
-    .dropmenu .logo{
-        height:90px;
-        list-style:none;
-        margin:0;
-        padding:0;
-        margin-left: 20px;
-        font-size: 50px;
-    }
-
-    .dropmenu ul{
-    height:120px;
-    list-style:none;
-    margin:0;
-    padding:0;
-    font-size: 30px;
-    }
-    
-    .dropmenu li{
-    float:left;
-    padding:0px;
-    }
-    
-    .dropmenu li a{
-    color: rgb(33, 50, 94);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    display:block;
-    line-height:90px;
-    margin-left: 30px;
-    padding:0px 20px;
-    text-align:center;
-    text-decoration:none;
-    }
-    
-    .dropmenu li a:hover, .dropmenu ul li:hover a{
-    background: rgb(33, 50, 94);
-    color:#FFFFFF;
-    text-decoration:none;
-    }
-    
-    .dropmenu li ul{
-    display:none; 
-    height:auto;
-    border:0px;
-    position:absolute;
-    margin-left: 30px;
-    width:200px;
-    z-index:200;
-    /*top:1em;
-    /*left:0;*/
-    }
     
     .dropmenu li:hover ul{
     display:block;
     }
-    
-    .dropmenu li li {
-    background: rgba(154, 179, 202, 0.871);
-    display:block;
-    float:none;
-    margin:0px;
-    padding:0px;
-    width:300px;
-    }
-    
     .dropmenu li:hover li a{
     background:none;
     }
-    
     .dropmenu li ul a{
     display:block;
     height:80px;
-    font-size:25px;
+    font-size:20px;
     margin:0px;
     padding:0px 10px 0px 15px;
     text-align:left;
@@ -210,7 +70,145 @@ body{
     color:#ffffff;
     text-decoration:none;
     }
+    .container{
+        width:100%;
+        margin: 10px auto;
+        position: relative;
+        text-align: center;
+    }
+    .header{
+        max-width: 100%;
+        height: 50px;
+        margin:0 auto;
+        margin-left: 44%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        vertical-align: middle;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: none;
+        padding: 50px 0 100px;
+        text-align: center;       
+    }
     
-    .dropmenu p{
-    clear:left;
+    .Login{
+        font-size: 50px;
+    }
+    .member_area {
+        position: relative;
+        padding-top: 60px;
+        border-top: 1px solid #ebebeb;
+    }
+    .item_area {
+      position: relative;
+      /* padding-top: 10px; */
+      border-top: 1px solid #ebebeb;
+    }
+    .login-form{
+        width: 500px;
+        border: 0;
+        border-radius: 5px;
+        background-color: rgb(51, 75, 127);
+        padding: 30px;
+        margin: 0 auto;
+        position:relative;
+    }
+    
+    
+    .login-form::before{
+        position:absolute;
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+        content:'';
+        top:-10px;
+        left:-10px;
+        border: 2px solid #000;
+        z-index:-1;
+        transition: all 0.2s;
+      }
+      .login-form:hover::before{
+        top: 10px;
+        left: 10px
+      }
+      .login-form::after{
+        position:absolute;
+        width: 100%;
+        height: 100%;
+        content:'';
+        top:10px;
+        left:10px;
+        background:#000;
+        border-radius: 5px;
+        z-index:-1;
+        transition: all 0.2s;
+      }
+      .login-form:hover::after{
+        top: -10px;
+        left:-10px
+      }
+  
+    .submit-btn{
+        color: rgb(51, 75, 127);
+        font-size: 14px;
+        background-color: rgb(255, 255, 255);
+        margin-bottom: 50px;
+        padding: 10px;
+        border: none;
+        text-align: center;
+        border-radius: 5px;
+        width: 100%;
+    }
+    .links{
+        text-align: center;
+    }
+    .links a{
+        font-size: 12px;
+        color: white;
+    }
+    .i_area{ position: relative;
+        padding-top: 60px;
+        border-top: 1px solid white;
+    }
+
+    .input-box{
+      position:relative;
+      margin:10px 0;
+      background-color: white;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+        font-size: 14px;
+        text-align: center;
+    }
+    .input-box > input{
+      background:transparent;
+      border:none;
+      padding:20px 10px 5px 0px;
+      margin-left: 10px;
+      font-size:14pt;
+      width:100%;
+    }
+    input::placeholder{
+    color:transparent;
+  }
+  input:placeholder-shown + label{
+
+      font-size:14pt;
+      top:15px;
+    }
+    input:focus + label, label{
+      font-size:10pt;
+      pointer-events: none;
+      position: absolute;
+      left:0px;
+      top:0px;
+      transition: all 0.2s ease ;
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+    }
+    input:focus, input:not(:placeholder-shown){
+      outline:none;
     }
