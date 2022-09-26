@@ -39,29 +39,20 @@ body {
   font-size: 13px;
 }
 
-.hero_header{
-  height: 650px;
-  width: 60%;
-  position: relative;
-  margin: 0 auto;
-  perspective: 1000px;
-  padding-top: 20px;
-}
-
-body h1{
+/* body h1{
   text-align: center;
   margin-top: 60px;
   margin-bottom: 60px;
-  font-size: 40px;
+  font-size: 24px;
   font-style: bold;
-  color: #203950;
-}
+  color: #545454;
+} */
 
 .products {
   margin-left: auto;
   margin-right: auto;
   padding: 0;
-  width: 980px;
+  width: 740px;
   text-align: center;
 }
 
@@ -73,6 +64,7 @@ body h1{
 }
 
 .products a{
+  height: 400px;
   text-decoration: none;
   color: black;
   float: left;
@@ -88,28 +80,34 @@ body h1{
   clear: both;
 }
 
-.footer{
-  text-align: center;
-  background-color: slategray;
+.footer a{
+  margin: 0 26px 10px 0;
+  margin-left: 20px;
+  line-height: 27px;
+  background-color: white;
+  font-weight: 400;
+    color: #333;
+    text-decoration: none;
+  font-size: 13px;
+  display: inline-block;
+  cursor: pointer;
 }
 
-.rotator {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 55%;
-  height: 150px;
-  transform-style: preserve-3d;
-  animation: roter 29s linear infinite;
-  }
+.footer1{
+  margin-left: 50px;
+  text-align: left;
+  background-color: white;
+  color: #777;
+  font-size: 12px;
+}
+
 
 
 .menu input[type=checkbox]{
   display: none;
 }
 .menu input[type=checkbox]+label{
-    padding-left: 25px;
+    padding-left: 21px;
     background-image: url('./img/menu-open.svg');
     background-repeat: no-repeat;
     
@@ -234,3 +232,12 @@ body h1{
     background-color: #3e8e41;
 }
 
+.pagination{
+  display: block;
+  text-align: center;
+}
+.pagination > li > a {
+  float: none;
+  margin-left: -5px;
+
+}
