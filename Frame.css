@@ -124,12 +124,18 @@ body {
     list-style: none;
     position: absolute;
 }
+.check{
+  color: #0890c0;
+  border: 1px solid red;
+  padding: 5px;
+}
 .menu .menuitems li{
     padding: 5px;
     
 }
 .menu .menuitems li a{
     text-decoration: none;
+  color: black;
 }
 /* 메뉴 펼침 - 체크박스 체크되면 메뉴목록 표시 */
 .menu input[type=checkbox]:checked~.menuitems{
@@ -234,16 +240,48 @@ body {
 
 .pagination{
   width: 100%;
-  display: inline-block;
+  display: block;
   text-align: center;
   list-style-type: none; 
+  width: 50%; /* 누구의 반이란거야? 부모 (여기선 body) */
+  margin: 0 auto ;
+	overflow: auto;
+  height: 50px;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: 700;
 }
 .pagination > li > a {
   float: none;
+  /* clear: both; */
   margin-left: 20px;
+  margin: 10px;
 }
 .li{
   list-style-type: none;
   display: inline;
+  width: 34px;
+  height: 34px;
   
 }
+.pagination a{
+	color: black;
+	text-decoration: none;
+	float: left; /* a는 인라인이라 안먹으니까 추가 */
+	text-align: center;
+	/* 하고보니 빨간색 벗어남 => 오버플로 오토주기, pagination 가서 */
+	
+}
+.pagination a.on {
+  color: #0890c0;
+  border: 1px solid #0890c0;
+  padding: 5px;
+}
+body h1{
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 30px;
+  font-style: bold;
+  color: #545454;
+}
+

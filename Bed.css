@@ -61,15 +61,15 @@ body h1{
   margin-left: auto;
   margin-right: auto;
   padding: 0;
-  width: 740px;
+  width: 950px;
   text-align: center;
 }
 
 .products img{
-  width: 225px;
-  height: 225px;
+  width: 290px;
+  height: 290px;
   margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .products a{
@@ -248,4 +248,14 @@ body h1{
 }
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
+}
+img {
+  border: none;
+  vertical-align: top;
+  text-align: center;
+}
+.IMG{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
 }

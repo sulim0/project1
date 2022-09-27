@@ -151,6 +151,17 @@
         top: -10px;
         left:-10px
       }
+        .find span::before{
+          content:'|';
+          color:white;
+          padding-right: 10px;
+      }
+      .find span:nth-child(1):before{
+        content:none;
+    }
+
+
+
   
     .submit-btn{
         color: rgb(51, 75, 127);

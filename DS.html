@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SimpleShop</title>
+    <meta charset="utf-8" />
+    <link href="./Frame.css" rel="stylesheet" />
+  <style>
+    @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 100;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');}
+        @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 300;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');} @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 400;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');} @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 500;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');} @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 700;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');} @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 900;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');}
+
+    
+
+    div, ul, li { margin:0; padding:0; }
+    
+    #blogMenu {
+      float:right;
+      margin:15px 5px 3px 5px;
+      padding:0 0 3px 0;
+      -moz-border-radius: 3px;
+      -khtml-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      background-color: white;
+    }
+    
+    #blogMenu ul li {
+      float:left;
+      list-style-type:none;
+    }
+    
+    #blogMenu a {
+      height:16px;
+      color: black;
+      font-family:arial;
+      padding:0 0 0 1px;
+      text-decoration:none;
+    }
+    
+    #blogMenu a:hover {
+      color:rgb(33, 50, 94);
+      border-bottom:1px solid black;
+      font-size:23px;
+    }
+    
+    #blogMenu ul ul {
+      display:none;
+      position:absolute;
+      background-color:white;
+    }
+    
+    #blogMenu ul li:hover ul {
+      display: block;
+    }
+    
+    #blogMenu ul ul li {
+      float:none;
+    }
+    
+    </style>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <a class="logo" href="#" onclick="location.href='Bed.html'">
+        <img src="./Img/Logo1.PNG" height="50px">
+      </a>
+      <div class="dropmenu"></div>
+        <ul>
+          <div id="blogMenu">
+            <ul>
+            <li><a href="#">Bed</a>
+            
+            <ul>
+              <li><a href="#" onclick="location.href='frame.html'">frame</a></li>
+              <li><a href="#" onclick="location.href='Mattress.html'">Mattress</a></li>
+            </ul>
+            
+            </li>
+            <li><a href="#">Furniture</a></li>
+            <li><a href="#"onclick="location.href='Login.html'">Login</a></li>
+            </ul>
+            </div>
+            </SPAN>
+        </ul>
+    </div>
+    <div class="item_area"></div>
+        
+            <div class="IMG" style="width: 100%; height: 200px;text-align: center;">
+            <img src="./Img/bed2.PNG" autoplay muted loop
+              width="100%" height="200px" style="display: inline-block;"></img>
+            <h2 style="text-align: center; line-height: 170px; display: inline-block; position: relative;
+              top: -230px; font-size: 50px; color: white;">프레임</h2></div>
+            <br><br>
+            <br>
+            
+            <div class="menu">
+              <input type="checkbox" class="" id="collapsible">
+              <label for="collapsible"><span>사이즈</span></label>
+              <ul id="menuitems" class="menuitems">
+                  <li><a href="#" onclick="location.href='Lking.html'">라지킹(LK)</a></li>
+                  <li><a href="#" onclick="location.href='king.html'">킹(K)</a></li>
+                  <li><a href="#" onclick="location.href='DD.html'">더블(DD)</a></li>
+                  <li><a href="#" onclick="location.href='SS.html'">슈퍼싱글(SS)</a></li>
+                  <li><a href="#" class="check" onclick="location.href='DS.html'">디럭스싱글(DS)</a></li>
+              </ul>        
+              </div>
+              <h1> 디럭스싱글(DS) </h1>
+             <div class="products">
+            <a href="#">
+                <img src="./Img/킹/킹1.jpg">
+                <p>ERBA</p>
+                <p class="price">5,628,030</p>
+            </a>
+            <a href="#">
+                <img src="./Img/킹/킹2.jpg">
+                <p>ARNO-II</p>
+                <p class="price">2,437,740</p>
+            </a>
+            <a href="#">
+                <img src="./Img/킹/zld3.jpg">
+                <p>FLEX</p>
+                <p class="price">4,233,420</p>
+            </a>
+            <a href="#">
+                <img src="./Img/킹/킹4.jpg">
+                <p>TVCF 침대 'ZANA'</p>
+                <p class="price">2,274,180</p>
+            </a>
+            <a href="#">
+                <img src="./Img/킹/킹5.jpg">
+                <p>VENATO-S Ⅱ</p>
+                <p class="price">3,243,360</p>
+            </a>
+            <a href="#">
+                <img src="./Img/킹/킹6.jpg">
+                <p>BMA-1164</p>
+                <p class="price">5,109,510</p>
+            </a>
+            <a href="#">
+                <img src="./Img/킹/킹7.jpg">
+                <p>ALBERO -W</p>
+                <p class="price">3,987,210</p>
+            </a>
+            <a href="#">
+                <img src="./Img/킹/킹8.jpg">
+                <p>FOGLIA</p>
+                <p class="price">3,630,510</p>
+            </a>
+            <a href="#">
+                <img src="./Img/킹/zld9.jpg">
+                <p>OPIMO-II</p>
+                <p class="price">4,733,670</p>
+            </a>
+            <a href="#">
+              <img src="./Img/킹/킹10.jpg">
+              <p>LANOTTE</p>
+              <p class="price">3,841,050</p>
+            </a>
+            <a href="#">
+              <img src="./Img/킹/킹11.jpg">
+              <p>TANGO</p>
+              <p class="price">2,630,010</p>
+            </a>
+            <a href="#">
+              <img src="./Img/킹/킹12.jpg">
+              <p>LUCE-III</p>
+              <p class="price">5,467,950</p>
+            </a>
+           
+
+
+            <div class="clearfix"></div>
+            </div><br>
+
+
+
+            <ul class="pagination">
+              <li class="li"><a class="on" href="./Frame.html">1</a></li>
+              <li class="li"><a href="./Frame1.html">2</a></li>
+              <li class="li"><a href="./Frame2.html">3</a></li>
+              <li class="li"><a href="./Frame3.html">4</a></li>
+              <li class="li"><a href="./Frame4.html">5</a></li>
+              <li class="li"><a href="./Frame1.html">&gt;</a></li>
+              <li class="li"><a href="./Frame5.html">&raquo;</a></li>
+            </ul>
+
+
+            <div class="item_area"></div>
+            <br>
+    <div class="footer">
+      <a href="/business/overview/index.do">기업정보</a>
+      <a href="/etc/policy/use/view.do">이용약관</a>
+      <a href="/etc/policy/privacy/view.do" class="priv">개인정보처리방침</a>
+      <a href="/customer/prdct-manual/index.do">매장개설안내</a>
+      <a href="/customer/prdct-manual/index.do">특판사업</a>
+      <a href="/customer/prdct-manual/index.do">고객지원</a>
+      <a href="/customer/prdct-manual/index.do">구매인증센터</a>
+    </div>
+
+      <div class="item_area"></div>
+      <br>
+      <div class="footer1">
+      <p class="registration">(주)아이스침대 / 사업자등록번호 : 01-064-823019</p>
+      <p class="address">
+          "본사 : 충청남도 천안시 대흥로 215 8층 / FAX : 02-003-0190"
+      </p>
+      <br>
+      
+  </div>
+    </body>
+</html>
