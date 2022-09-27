@@ -233,11 +233,17 @@ body {
 }
 
 .pagination{
-  display: block;
+  width: 100%;
+  display: inline-block;
   text-align: center;
+  list-style-type: none; 
 }
 .pagination > li > a {
   float: none;
-  margin-left: -5px;
-
+  margin-left: 20px;
+}
+.li{
+  list-style-type: none;
+  display: inline;
+  
 }
