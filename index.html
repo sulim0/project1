@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SimpleShop</title>
+    <meta charset="utf-8" />
+    <link href="./Bed.css" rel="stylesheet" />
+    <script>
+      var index = 0;   //이미지에 접근하는 인덱스
+      window.onload = function(){
+          slideShow();
+      }
+      
+      function slideShow() {
+      var i;
+      var x = document.getElementsByClassName("hero_header");  //slide1에 대한 dom 참조
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";   //처음에 전부 display를 none으로 한다.
+      }
+      index++;
+      if (index > x.length) {
+          index = 1;  //인덱스가 초과되면 1로 변경
+      }   
+      x[index-1].style.display = "block";  //해당 인덱스는 block으로
+      setTimeout(slideShow, 4000);   //함수를 4초마다 호출
+  }
+  </script>
+  <style>
+    div, ul, li { margin:0; padding:0; }
+    
+    #blogMenu {
+      float:right;
+      margin:15px 5px 3px 5px;
+      padding:0 0 3px 0;
+      -moz-border-radius: 3px;
+      -khtml-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      background-color: white;
+    }
+    
+    #blogMenu ul li {
+      float:left;
+      list-style-type:none;
+    }
+    
+    #blogMenu a {
+      height:16px;
+      color: black;
+      font-family:arial;
+      padding:0 0 0 1px;
+      text-decoration:none;
+    }
+    
+    #blogMenu a:hover {
+      color:rgb(33, 50, 94);
+      border-bottom:1px solid black;
+      font-size:23px;
+    }
+    
+    #blogMenu ul ul {
+      display:none;
+      position:absolute;
+      background-color:white;
+    }
+    
+    #blogMenu ul li:hover ul {
+      display: block;
+    }
+    
+    #blogMenu ul ul li {
+      float:none;
+    }
+    
+    </style>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <a class="logo" href="#" onclick="location.href='Bed.html'">
+        <img src="./Img/Logo1.PNG" height="50px">
+      </a>
+      <div class="dropmenu"></div>
+        <ul>
+          <div id="blogMenu">
+            <ul>
+            <li><a href="#" onclick="location.href='frame.html'">Bed</a>
+            
+            <ul>
+              <li><a href="#" onclick="location.href='frame.html'">frame</a></li>
+              <li><a href="#" onclick="location.href='Mattress.html'">Mattress</a></li>
+            </ul>
+            
+            </li>
+            <li><a href="#">Furniture</a></li>
+            <li><a href="#"onclick="location.href='Login.html'">Login</a></li>
+            </ul>
+            </div>
+        </ul>
+    </div>
+    <div class="item_area"></div>
+    
+            
+            </ul>
+            </div>
+        </ul>
+    </div>
+    <!-- <div class="menu">
+      <input type="checkbox" class="" id="collapsible">
+      <label for="collapsible"><span>메뉴</span></label>
+      <ul id="menuitems" class="menuitems">
+          <li><a href="#">기업정보</a></li>
+          <li><a href="#">매장안내</a></li>
+          <li><a href="#">이벤트</a></li>
+          <li><a href="#">고객지원</a></li>
+          <li><a href="#">게시판</a></li>
+          <li><a href="#">기타</a></li>
+      </ul>        
+  </div> -->
+    
+    
+    <img class="hero_header" src="./Img/침.png" onclick="location.href='Bed.html'"/>
+    <img class="hero_header" src="./Img/퀸.jpg" onclick="location.href='Bed.html'"/>
+    <img class="hero_header" src="./Img/퀸1.png" onclick="location.href='Bed.html'"/>
+    <img class="hero_header" src="./Img/퀸2.jpg" onclick="location.href='Bed.html'"/>
+
+    <h1>NOW SNS</h1>
+    <div class="products">
+      <a href="#">
+        <img src="./Img/눕.png">
+      </a>
+      <a href="#">
+        <img src="./Img/박.jpg">
+      </a>
+      <a href="#">
+        <img src="./Img/보.png">
+      </a>
+
+      <div class="clearfix"></div>
+    </div>
+    <div class="IMG">
+    <img src="https://www.acebed.com/common/images/con6-bts1.png" alt="인스타그램">
+    <img src="https://www.acebed.com/common/images/con6-bts2.png" alt="페이스북">
+    <img src="https://www.acebed.com/common/images/con6-bts3.png" alt="블로그">
+    <img src="https://www.acebed.com/common/images/con6-bts4.png" alt="유튜브">
+  </div>
+  <br>
+  <br>
+    <div class="item_area"></div>
+    <br>
+    <div class="footer">
+      <a href="/business/overview/index.do">기업정보</a>
+      <a href="/etc/policy/use/view.do">이용약관</a>
+      <a href="/etc/policy/privacy/view.do" class="priv">개인정보처리방침</a>
+      <a href="/customer/prdct-manual/index.do">매장개설안내</a>
+      <a href="/customer/prdct-manual/index.do">특판사업</a>
+      <a href="/customer/prdct-manual/index.do">고객지원</a>
+      <a href="/customer/prdct-manual/index.do">구매인증센터</a>
+    </div>
+
+      <div class="item_area"></div>
+      <br>
+      <div class="footer1">
+      <p class="registration">(주)아이스침대 / 사업자등록번호 : 01-064-823019</p>
+      <p class="address">
+          "본사 : 충청남도 천안시 대흥로 215 8층 / FAX : 02-003-0190"
+      </p>
+      <br>
+      
+  </div>
+  </body>
+</html>
