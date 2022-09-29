@@ -112,19 +112,35 @@ body {
 
 .menu input[type=checkbox]{
   display: none;
+
 }
+
+.chkBox{
+  margin-left: 2px;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-image: url('./Img/open.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* vertical-align: top; */
+}
+
+/* 체크되었을때 chkBox 클래스를 가진 div의 background-image를 변경 */
+input[id='collapsible']:checked ~ label .chkBox{
+  background-image: url('./Img/close.JPG');
+}
+/* 
 .menu input[type=checkbox]+label{
     padding-left: 21px;
-    background-image: url('./img/menu-open.svg');
-    background-repeat: no-repeat;
     
-}
-.menu input[type=checkbox]+label>span{
+} */
+/* .menu input[type=checkbox]+label>span{
     font-weight: bold;
-}
-.menu input[type=checkbox]:checked+label{
-    background-image: url('./img/menu-close.svg');
-}
+} */
+/* .menu input[type=checkbox]:checked+label{
+    background-image: url('./img/close.JPG');
+} */
 /* 메뉴 목록*/
 .menu .menuitems{
     display: none;
@@ -145,7 +161,7 @@ body {
   color: black;
 }
 /* 메뉴 펼침 - 체크박스 체크되면 메뉴목록 표시 */
-.menu input[type=checkbox]:checked~.menuitems{
+input[id='collapsible']:checked ~ .menuitems{
     display: block;
 }
 
